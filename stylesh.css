@@ -1,0 +1,51 @@
+body{
+    background-color: grey;
+}
+
+h1{
+    color: red;
+    position: relative;
+    left: 520px;
+}
+
+h3{
+    color: black;
+    position: relative;
+    left: 620px;
+}
+
+img{
+    position: relative;
+    left: 555px;
+    width: 250px;
+}
+
+nav{
+    position: relative;
+    left: 630px
+}
+
+main{
+    position:relative;
+    left: 525px;
+}
+
+li{
+    position:relative;
+    left: 92px;
+}
+
+p{
+    position:relative;
+    left: 75px;
+}
+
+footer{
+    position:relative;
+    left:485px;
+}
+
+div{
+    position:relative;
+    right: 520px;
+}
