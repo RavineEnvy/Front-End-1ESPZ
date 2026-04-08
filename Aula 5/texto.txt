@@ -1,0 +1,12 @@
+Tabelas - Organização agrupada de dados, Linhas e colunas onde cada linha é um regisro e cada coluna é um atribuo. (No dia a dia é usado para horários de aula, planilhas, comparativo de preço, notas de alunos, etc..)
+
+Quando usar (ou não) tabela?
+Dados comparáveis entre si, informações estruturadas em categorias, relatórios, notas, preços, horários.
+Não usar quando: Criar layout da página, posicionar  eslementos visuais, substituir css ou flexbox. (Taela é para dados NÂO para design).
+
+as tags são: 
+
+<table></table> - para definir onde começa e termina a tabela
+<th></th> - para títulos de colunas ou linhas
+<tr></tr> - Dentro do "tr" existe as células(td)
+<td></td> - Conteudo de cada célula
