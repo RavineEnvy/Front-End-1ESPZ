@@ -1,1 +1,98 @@
-Aula 6
+Aula 6 - Formulários em HTML
+
+- Coletar informações do usuário
+- Realizar login e cadastro
+- Enviar mensagens e pesquisas
+- Processar pedidos e compras
+
+São a principal forma d comunicação entre o usuário e o sistema na web.
+
+Onde usamos formulários no dia a dia?
+
+- Login e cadastro
+- Compas online
+- Fale conosco
+
+Estrutura básica: <form></form>
+Atributos ecenssiais:
+- action (usados para buscas e filtros)
+- method (usados para dados sensíveis: senhas e informações pessoais)
+
+Estrutura simples: <lable> + <input> 
+
+A combinação de eles é a base de qualquer formulário bem construído.
+
+label - Descreve o campo ao usuário e melhora a acessibilidade
+Input - Campo onde o usuário digita ou selecona os dados.
+fr + id - Conecta o label ao input correspondente
+
+O papel do <label>:
+
+- Acessibilidade (Leitores de tela anunciam o label ao focar no campo, essencial para usuários com deficiência visual.)
+- Usabilidade (Clicar no label ativa o campo correspondente, ampliando a área clicável.)
+- Semântica (Informa claramente ao navegado a relação entre texto e campo).
+
+(Nunca omita label!)
+
+O que é <input>?:
+
+A tag input é o elemento mais versátil do HMTL. ELe representa diferentes tipos de campo dependendo do atributo.
+
+Tipos mais comuns:
+- type="text" (campo de texto livre)
+- type="email" (valida formato de e-mail automaticamente)
+- type="password" (censura o que está escrito)
+- type="number" (aceita apenas valores numéricos)
+- type="radio" (seleciona uma opção entre várias)
+- type="checkbox" (marca uma ou mais opções)
+- type="date" (exibe um seletor de datas)
+- type="file" (permite envio de arquivo)
+
+(navegados automaticamente valida campos como "email","number" e "date")
+
+input type="text":
+- maxlength (limita o número máximo de caracteres)
+- minlength (exige um número mínimo de caracteres)
+- required (torna o campo obrigatório)
+- value (efine um valor padrão já preenchido no campo)
+- placeholder (texto exbido na label para o usuáio)
+
+type="email" e type="password"
+- EMAIL: Valida automaticamente se o valor digitado possui o ormato coreo de email (com @ e dominio). No celular, exibe teclado otiizado
+
+- PASSWORD: Oculta os caracteres digitados, exibindo apenas pontos de *.
+
+type="radio"
+- Use radio buttos quando o usuário deve escolher apnas uma opção entre um grupo. Todos os botões do grup devem ter o mesmo name.
+
+- Mesmo name
+- Atributo value
+- Atributo checked
+
+type="checkbox"
+- Quando o usuário precisa selecionar multiplas opções:
+  - Filtro de buscas
+  - Seleção de interesse
+  - Aceite termos de uso
+
+<select> e <options>
+
+- O elemento select cria uma lista suspensa (dropdown) com opções predefinidas. Idealquando há muitas opções para exibir como radio buttons
+
+- value da options (valor enviado ao servidor quando a opção é escolhida)
+- selected
+- disable
+
+<textarea>
+
+- O textarea cria um campo de texto multilinha, perfeito ara mensagens longas, comentários e descrições que não cabem em um input do type="text".
+
+("rows" define a altura e "cols" define a largura inicial. O usuário pode redimensionar o campo arrastando o canto inferior direito.)
+
+Botões: <button> e type="submit"
+
+Todo formulário precisa de um botão para ser enviad. Existem três tipos principais de botões m HTML.
+
+- submit (envia o formulário)
+- reset (limpa todos os campos do formulário)
+- button (não envia o formulário - tratado em JavaScript)
