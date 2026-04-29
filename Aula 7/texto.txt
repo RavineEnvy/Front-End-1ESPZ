@@ -1,0 +1,65 @@
+HTML vc CSS: Estrutura e Decoração
+
+ O html sem o css aparece apenas como texto simples, sem cor, sem formas. (Basicamente um documento anos 80)
+
+ 3 formas de usar o css: inline - interno - externo
+
+ Inline - direto na tag HTML
+ Interno - dentro da tag <style> no <head> do HTML
+ Externo - Em um arquivo separado style.css que se conectam através da tag <link>
+
+ O css externo é a forma mais recomendada em projetos reais. (Mais Organização, Reuso e Manutenção, além de que, um ÚNICO arquivo css pode estilizar todas as páginas de um projeto)
+
+ Seletores básicos do css!
+
+ o seletor diz qal elemento HTML quer estilizar três tipos fundamentais.
+
+Por tag!
+
+aplica elemento para todos os lementos daquele tipo:
+
+p {
+    color: gray;
+}
+
+
+Por classes!
+
+Aplica a elementos com atributo classes:
+
+.destaque{
+    color: blue;
+}
+
+Por ID!
+
+aplica a elementos com ID único:
+
+#titulo{
+    font-size: 32px;
+}
+
+Propriedades essenciais do CSS
+color, background-color, font-family, font-size, text-align
+
+Espaçamentos: margin e padding!
+
+Analogia com uma caixa de presentes
+
+padding - border - margin
+
+padding - "Papel de Embrulho"
+
+border - "A caida de papelão, a estrutura"
+
+margin - "Espaço vazio entre a caixa e outras caixas"
+
+Bordas: border e border-radius
+
+as bordas adcionam contorno e personalidae aos elementos, com border-radius, você aredonda os cantos.
+
+border: 2px solid grey
+
+Interção com :hover
+
+o :houver é uma pseudo classe que aplica estilos quando o usuário passa o mouse sobre um elemento.
