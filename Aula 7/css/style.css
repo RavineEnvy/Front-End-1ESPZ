@@ -37,3 +37,16 @@ main{
 .card h2{
     color: #016F13;
 }
+
+button {
+    background-color: white;
+    border-radius: 8px;
+    padding:3px;
+    margin-top: 15px;
+    border: 1px solid black;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: grey;
+}
