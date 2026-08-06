@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #222;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.5s ease-in;
+}
+
+a:hover {
+    color: #ed145b;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #111111;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header-content {
+    display: flex;
+    /* Os códigos abaixo só são usandos quando a propriedade display: flex;
+    estiver ativa no código */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    color: #ed145b;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.header-nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.events {
+    padding: 60px 0;
+}
+
+.events-intro {
+    max-width: 650px;
+    margin-bottom: 32px;
+}
+
+.events-tag {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #ed145b;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.events-intro h1 {
+    margin-bottom: 12px;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.events-intro p {
+    color: #555;
+}
+
+.events-list {
+    display: flex;
+    justify-content: center;
+    /* Direção do conteúdo do display flex */
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+
+.event-card:hover {
+    border-color: #ed145b;
+    transform: translateY(-4px);
+}
+
+.event-card-category {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 6px 10px;
+    background-color: #ffe2ec;
+    color: #b30040;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.event-card-title {
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.event-card-description {
+    margin-bottom: 20px;
+    color: #555555;
+}
+
+.event-card-information {
+    margin-bottom: 24px;
+}
+
+.event-card-information p {
+    margin-bottom: 6px;
+}
+
+.event-card-button {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #ed145b;
+    color: #ffffff;
+    border-radius: 6px;
+    font-weight: bold;
+    transition:
+        background-color 0.7s ease,
+        color 0.7s ease;
+    ;
+}
+
+.event-card-button:hover,
+.event-card-button:focus-visible {
+    background-color: #b80d43;
+    color: #000000;
+}
+
+.about {
+    padding: 48px 0;
+    background-color: #ffffff;
+}
+
+.about h2 {
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+.about p {
+    max-width: 650px;
+    color: #555555;
+}
