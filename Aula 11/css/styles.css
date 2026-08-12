@@ -52,6 +52,10 @@ img {
     padding: 28px 0;
     border-bottom: 1px solid #d8d8d2;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     /*
         DESAFIO 1
 
@@ -80,7 +84,8 @@ img {
 }
 
 .menu {
-    margin-top: 20px;
+    display: flex;
+    gap: 15px;
 
     /*
         Os links também precisam ficar lado a lado.
@@ -114,6 +119,10 @@ img {
     margin: 0 auto;
     padding: 72px 0;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15%;
     /*
         DESAFIO 2
 
@@ -223,6 +232,10 @@ img {
 ----------------------------- */
 
 .projects {
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
     /*
         DESAFIO 3
 
@@ -241,6 +254,7 @@ img {
 
 .card {
     width: calc(33.333% - 16px);
+    min-width: 380px;
     min-height: 260px;
     margin-bottom: 24px;
     padding: 28px;
@@ -273,8 +287,10 @@ img {
     font-weight: 800;
 }
 
-.extra-card {
-    /*
+/* .extra-card {
+
+
+    
         Estes cards extras podem ficar escondidos no começo da aula
         e ser liberados para o exercício de flex-wrap.
 
@@ -283,10 +299,9 @@ img {
 
         Para mostrar novamente:
         remova a propriedade abaixo.
-    */
-
+    
     display: none;
-}
+} */
 
 
 /* -----------------------------
