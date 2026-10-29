@@ -1,5 +1,5 @@
 import EtiquetaAula from './components/EtiquetaAula.jsx';
-import PostCard from './components/PostCard.jsx';
+import PostCard from './components/post-card/index.jsx';
 import { posts } from './data/posts.js';
 
 export default function App() {
@@ -16,6 +16,7 @@ export default function App() {
           <PostCard
             key={post.id}
             nome={post.nome}
+            usuario={post.usuario}
             tema={post.tema}
             texto={post.texto}
             iniciais={post.iniciais}

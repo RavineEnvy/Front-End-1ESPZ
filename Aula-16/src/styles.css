@@ -1,28 +1,99 @@
-:root { font-family: 'Segoe UI', system-ui, sans-serif; color: #27243a; background: #f5f4ff; font-synthesis: none; text-rendering: optimizeLegibility; }
-* { box-sizing: border-box; }
-body { margin: 0; min-width: 280px; }
-button { font: inherit; }
-.page { width: min(100% - 32px, 680px); margin: 0 auto; padding: 48px 0 72px; }
-.page-header { margin-bottom: 28px; }
-.page-eyebrow { margin: 0 0 8px; color: #6455ab; font-size: .86rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
-.page-title { margin: 0 0 8px; font-size: clamp(2.1rem, 6vw, 3rem); letter-spacing: -.055em; }
-.page-description { margin: 0; color: #6c6680; line-height: 1.6; }
-.feed { display: grid; gap: 16px; }
-.post { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 14px; padding: 24px; background: #fff; border: 1px solid #e7e4f5; border-radius: 20px; box-shadow: 0 7px 28px #3f326c0b; }
-.avatar { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 16px; font-weight: 800; font-size: 1.25rem; }
-.avatar--pink { background: #ffe2ef; color: #a52669; }
-.avatar--purple { background: #e8e0ff; color: #5e42a2; }
-.avatar--green { background: #d9f5e6; color: #207b54; }
-.post-body { min-width: 0; }
-.post-author { display: flex; flex-wrap: wrap; gap: 2px 8px; align-items: baseline; }
-.post-author strong { font-size: 1rem; }
-.post-author span { color: #817b8f; font-size: .9rem; }
-.post-text { margin: 13px 0 19px; line-height: 1.7; overflow-wrap: anywhere; }
-.post-footer { display: flex; align-items: center; gap: 14px; }
-.like-button { display: inline-flex; gap: 9px; align-items: center; border: 1px solid #e6e2f2; border-radius: 999px; padding: 8px 14px; color: #635c77; background: #faf9ff; cursor: pointer; transition: background .2s, border-color .2s; }
-.like-button:hover { background: #fff0f6; border-color: #edc6db; }
-.like-button[aria-pressed='true'] { color: #b22465; background: #fff0f6; border-color: #edc6db; }
-.like-button:focus-visible { outline: 3px solid #7e63de; outline-offset: 3px; }
-.page-note { margin-top: 24px; color: #797286; font-size: .85rem; line-height: 1.6; text-align: center; }
-@media (max-width: 520px) { .page { width: min(100% - 24px, 680px); padding-top: 28px; } .post { padding: 17px; grid-template-columns: 42px minmax(0,1fr); gap: 11px; } .avatar { width: 42px; height: 42px; border-radius: 13px; } .post-author { gap: 0 6px; } .post-author strong, .post-author span { font-size: .86rem; } }
-@media (prefers-reduced-motion: reduce) { .like-button { transition: none; } }
+:root {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #27243a;
+    background: #f5f4ff;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 280px;
+}
+
+button {
+    font: inherit;
+}
+
+.page {
+    width: min(100% - 32px, 680px);
+    margin: 0 auto;
+    padding: 48px 0 72px;
+}
+
+.page-header {
+    margin-bottom: 28px;
+}
+
+.page-eyebrow {
+    margin: 0 0 8px;
+    color: #6455ab;
+    font-size: .86rem;
+    font-weight: 800;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.page-title {
+    margin: 0 0 8px;
+    font-size: clamp(2.1rem, 6vw, 3rem);
+    letter-spacing: -.055em;
+}
+
+.page-description {
+    margin: 0;
+    color: #6c6680;
+    line-height: 1.6;
+}
+
+.feed {
+    display: grid;
+    gap: 16px;
+}
+
+
+.page-note {
+    margin-top: 24px;
+    color: #797286;
+    font-size: .85rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+@media (max-width: 520px) {
+    .page {
+        width: min(100% - 24px, 680px);
+        padding-top: 28px;
+    }
+
+    .post {
+        padding: 17px;
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 11px;
+    }
+
+    .avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 13px;
+    }
+
+    .post-author {
+        gap: 0 6px;
+    }
+
+    .post-author strong,
+    .post-author span {
+        font-size: .86rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .like-button {
+        transition: none;
+    }
+}

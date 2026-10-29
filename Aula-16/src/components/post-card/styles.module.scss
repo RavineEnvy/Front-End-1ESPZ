@@ -1,0 +1,96 @@
+.post {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 14px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e7e4f5;
+    border-radius: 20px;
+    box-shadow: 0 7px 28px #3f326c0b;
+}
+
+.avatar {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.avatar--pink {
+    background: #ffe2ef;
+    color: #a52669;
+}
+
+.avatar--purple {
+    background: #e8e0ff;
+    color: #5e42a2;
+}
+
+.avatar--green {
+    background: #d9f5e6;
+    color: #207b54;
+}
+
+.post-body {
+    min-width: 0;
+}
+
+.post-author {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 8px;
+    align-items: baseline;
+}
+
+.post-author strong {
+    font-size: 1rem;
+}
+
+.post-author span {
+    color: #817b8f;
+    font-size: .9rem;
+}
+
+.post-text {
+    margin: 13px 0 19px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.post-footer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.like-button {
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    border: 1px solid #e6e2f2;
+    border-radius: 999px;
+    padding: 8px 14px;
+    color: #635c77;
+    background: #faf9ff;
+    cursor: pointer;
+    transition: background .2s, border-color .2s;
+}
+
+.like-button:hover {
+    background: #fff0f6;
+    border-color: #edc6db;
+}
+
+.like-button[aria-pressed='true'] {
+    color: #b22465;
+    background: #fff0f6;
+    border-color: #edc6db;
+}
+
+.like-button:focus-visible {
+    outline: 3px solid #7e63de;
+    outline-offset: 3px;
+}

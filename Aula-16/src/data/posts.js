@@ -1,12 +1,12 @@
 export const posts = [
     {
         id: 1,
-        nome: "Camila Dev",
-        usuario: "@camilacodes",
+        nome: "Camila Dev ",
+        usuario: "@camilaCaralho",
         iniciais: "C",
         tema: "pink",
         texto:
-            "Passei 40 minutos tentando centralizar uma div. Era só colocar align-items: center. Vou fingir que nada aconteceu. 💀",
+            "Passei 40 minutos tentando não VibeCodar. Era só colocar align-items: center. Vou fingir que nada aconteceu. 💀",
         curtidasIniciais: 120,
     },
     {
